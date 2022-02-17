@@ -30,20 +30,14 @@
             android:src="@mipmap/ic_launcher"
             android:id="@+id/app_logo"/>
         <TextView
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="3"
             android:textSize="25sp"
             android:text=""
             android:id="@+id/app_id"
             android:padding="15dp"
             android:textColor="@color/black"/>
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="15sp"
-            android:text="검색"
-            android:id="@+id/search_page"/>
+
     </LinearLayout>
     <FrameLayout
         android:layout_width="match_parent"

@@ -3,6 +3,9 @@ package com.example.arra
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuInflater
+import android.view.MenuItem
 import androidx.fragment.app.Fragment
 import com.bumptech.glide.Glide
 
@@ -27,11 +30,6 @@ class MainActivity : AppCompatActivity() {
         supportActionBar!!.setDisplayShowCustomEnabled(true)
         supportActionBar!!.setDisplayHomeAsUpEnabled(true)
 
-
-        search_page.setOnClickListener {
-            val intent = Intent(this, SearchActivity::class.java)
-            startActivity(intent)
-        }
 
         var temp = intent.getStringExtra("application").toString()
         val regex = Regex("[^A-Za-z0-9]")
@@ -58,6 +56,21 @@ class MainActivity : AppCompatActivity() {
         }
 
 
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.menu,menu)
+        return super.onCreateOptionsMenu(menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when(item?.itemId){
+            R.id.menu_search->{
+                val intent = Intent(this, SearchActivity::class.java)
+                startActivity(intent)
+            }
+        }
+        return super.onOptionsItemSelected(item)
     }
     private fun setDataAtFragment(fragment: Fragment, app_name:String){
         val bundle = Bundle()
