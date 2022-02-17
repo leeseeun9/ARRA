@@ -15,11 +15,17 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
+    private lateinit var app_name: String
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         setContentView(R.layout.activity_main)
+
+        var temp = intent.getStringExtra("application").toString()
+        val regex = Regex("[^A-Za-z0-9]")
+        var result = regex.replace(temp, "")
+        app_name = result.toLowerCase()
 
         val firebaseDatabase = FirebaseDatabase.getInstance() // 실시간 데이터 db
         val firestoredb = FirebaseFirestore.getInstance() // firestore db
@@ -28,13 +34,9 @@ class MainActivity : AppCompatActivity() {
 
         supportActionBar!!.setDisplayShowTitleEnabled(false)
         supportActionBar!!.setDisplayShowCustomEnabled(true)
-        supportActionBar!!.setDisplayHomeAsUpEnabled(true)
 
 
-        var temp = intent.getStringExtra("application").toString()
-        val regex = Regex("[^A-Za-z0-9]")
-        var result = regex.replace(temp, "")
-        var app_name = result.toLowerCase()
+
 
         firestoredb.collection("app_name").document(app_name).get()
             .addOnSuccessListener { result ->
@@ -45,14 +47,21 @@ class MainActivity : AppCompatActivity() {
             }
 
         //supportFragmentManager.beginTransaction().replace(R.id.frameLayout, Month()).commit()
-        setDataAtFragment(Month(),app_name)
 
-        monthBtn.setOnClickListener {
-            setDataAtFragment(Month(), app_name)
 
-        }
-        updateBtn.setOnClickListener {
-            setDataAtFragment(Update(), app_name)
+        bnv.run {
+            setOnNavigationItemSelectedListener {
+                when(it.itemId){
+                    R.id.analysis->{
+                        setDataAtFragment(Month(),app_name)
+                    }
+                    R.id.tag->{
+                        setDataAtFragment(Update(),app_name)
+                    }
+                }
+                true
+            }
+            selectedItemId = R.id.analysis
         }
 
 

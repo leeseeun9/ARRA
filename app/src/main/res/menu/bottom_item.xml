@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/list"
+        android:id="@+id/analysis"
         android:icon="@drawable/ic_baseline_analytics_24"
         android:enabled="true"
         android:title="분석" />
     <item
-        android:id="@+id/home"
+        android:id="@+id/tag"
         android:icon="@drawable/ic_baseline_text_snippet_24"
         android:enabled="true"
         android:checked="true"
