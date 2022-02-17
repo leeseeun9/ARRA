@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="itemList">
+        <item>2022-1</item>
+        <item>2021-12</item>
+        <item>2021-11</item>
+        <item>2021-10</item>
+        <item>2021-9</item>
+        <item>2021-8</item>
+        <item>2021-7</item>
+        <item>2021-6</item>
+        <item>2021-5</item>
+        <item>2021-4</item>
+        <item>2021-3</item>
+        <item>2021-2</item>
+        <item>2021-1</item>
+        <item>2020-12</item>
+        <item>2020-11</item>
+        <item>2020-10</item>
+        <item>2020-9</item>
+        <item>2020-8</item>
+        <item>2020-7</item>
+        <item>2020-6</item>
+        <item>2020-5</item>
+        <item>2020-4</item>
+        <item>2020-3</item>
+        <item>2020-2</item>
+        <item>2020-1</item>
+        <item>2019-12</item>
+        <item>2019-11</item>
+        <item>2019-10</item>
+        <item>2019-9</item>
+        <item>2019-8</item>
+        <item>2019-7</item>
+        <item>2019-6</item>
+        <item>2019-5</item>
+        <item>2019-4</item>
+        <item>2019-3</item>
+        <item>2019-2</item>
+        <item>2019-1</item>
+        <item>2018-12</item>
+        <item>2018-11</item>
+        <item>2018-10</item>
+        <item>2018-9</item>
+        <item>2018-8</item>
+        <item>2018-7</item>
+        <item>2018-6</item>
+        <item>2018-5</item>
+        <item>2018-4</item>
+        <item>2018-3</item>
+        <item>2018-2</item>
+        <item>2018-1</item>
+        <item>2022-2</item>
+
+    </string-array>
+</resources>

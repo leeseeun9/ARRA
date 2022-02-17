@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Month">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="감정분석"
+                android:id="@+id/month_emotion"
+                android:textColor="@color/main_navy"
+                android:textStyle="bold"
+                android:background="@drawable/btn_left"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="리뷰요약"
+                android:id="@+id/month_summary"
+                android:layout_gravity="center"
+                android:textColor="@color/main_navy"
+                android:textStyle="bold"
+                android:background="@drawable/btn_mid"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="LDA"
+                android:id="@+id/month_topic"
+                android:layout_gravity="right"
+                android:textColor="@color/main_navy"
+                android:textStyle="bold"
+                android:background="@drawable/btn_rigth"/>/>
+
+
+        </LinearLayout>
+        <!-- TODO: Update blank fragment layout -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/monthFrameLayout"
+            android:layout_weight="1"
+            android:background="@drawable/layoutstyle"
+            android:padding="10dp"
+            android:layout_margin="10dp">
+
+        </FrameLayout>
+    </LinearLayout>
+
+</FrameLayout>
