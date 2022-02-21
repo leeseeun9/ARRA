@@ -26,7 +26,7 @@ import com.google.firebase.database.DataSnapshot as DataSnapshot
 class MonthSummary : Fragment(){
     private var month_name: String = ""
     var check = false
-    var date = "2022-1"
+    var date = "2022-01"
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         arguments?.let { month_name = it.getString("month_name").toString()}
 

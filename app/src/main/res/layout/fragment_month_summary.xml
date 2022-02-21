@@ -6,33 +6,38 @@
     tools:context=".MonthSummary">
 
     <!-- TODO: Update blank fragment layout -->
-    <ScrollView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <LinearLayout
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/month_summary_spinner"
+            android:layout_gravity="center"/>
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-            <Spinner
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/month_summary_spinner"
-                android:layout_gravity="center"/>
-            <TextView
+            android:layout_height="match_parent">
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text=""
-                android:id="@+id/summary_text1"
-                android:gravity="center"
-                android:layout_margin="20dp"
-                android:textColor="@color/black"
-                android:textSize="13sp"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="* 추천 수 기반으로 리뷰가 요약되었습니다 *"
-                android:textSize="10sp"
-                android:gravity="center"/>
-        </LinearLayout>
-    </ScrollView>
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:id="@+id/summary_text1"
+                    android:gravity="center"
+                    android:layout_margin="20dp"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="* 추천 수 기반으로 리뷰가 요약되었습니다 *"
+                    android:textSize="10sp"
+                    android:gravity="center"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
 </FrameLayout>

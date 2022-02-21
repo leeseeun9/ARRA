@@ -53,4 +53,14 @@
         <item>2022-2</item>
 
     </string-array>
+    <string-array name="topic_year">
+        <item>2021-2</item>
+        <item>2021-1</item>
+        <item>2020-2</item>
+        <item>2020-1</item>
+        <item>2019-2</item>
+        <item>2019-1</item>
+        <item>2018-2</item>
+        <item>2018-1</item>
+    </string-array>
 </resources>
