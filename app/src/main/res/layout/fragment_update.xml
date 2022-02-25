@@ -13,35 +13,106 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
-            <Button
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="감정분석"
-                android:layout_marginLeft="10dp"
-                android:id="@+id/update_emotion"/>
-            <Button
+                android:text="장점"
+                android:textColor="@color/black"
+                android:layout_margin="10dp"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="#"
+                android:id="@+id/positive_tag1"
+                android:textColor="@color/main_navy"
+                android:textStyle="bold"
+                android:layout_margin="10dp"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="#"
+                android:id="@+id/positive_tag2"
+                android:textColor="@color/main_navy"
+                android:textStyle="bold"
+                android:layout_margin="10dp"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="#"
+                android:id="@+id/positive_tag3"
+                android:textColor="@color/main_navy"
+                android:textStyle="bold"
+                android:layout_margin="10dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="리뷰요약"
-                android:layout_marginLeft="10dp"
-                android:id="@+id/update_summary"/>
-            <Button
-                android:layout_width="wrap_content"
+                android:text="단점"
+                android:textColor="@color/black"
+                android:layout_margin="10dp"/>
+            <TextView
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="LDA"
-                android:layout_marginLeft="10dp"
-                android:id="@+id/update_topic"/>
-
+                android:layout_weight="1"
+                android:text="#"
+                android:id="@+id/negative_tag1"
+                android:textColor="@color/main_navy"
+                android:textStyle="bold"
+                android:layout_margin="10dp"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="#"
+                android:id="@+id/negative_tag2"
+                android:textColor="@color/main_navy"
+                android:textStyle="bold"
+                android:layout_margin="10dp"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="#"
+                android:id="@+id/negative_tag3"
+                android:textColor="@color/main_navy"
+                android:textStyle="bold"
+                android:layout_margin="10dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/layoutstyle"
+            android:layout_margin="10dp">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_margin="10dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text=""
+                        android:id="@+id/tag_text"
+                        android:gravity="center"
+                        android:layout_margin="20dp"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"/>
+                </LinearLayout>
+            </ScrollView>
         </LinearLayout>
 
         <!-- TODO: Update blank fragment layout -->
-        <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:id="@+id/updateFrameLayout">
-
-        </FrameLayout>
 
     </LinearLayout>
 
